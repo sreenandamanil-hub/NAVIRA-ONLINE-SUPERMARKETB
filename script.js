@@ -28,14 +28,13 @@ function previous() {
 }
 
 function showBuy() {
+    document.querySelector(".container").style.display = "none";
+    document.getElementById("rightPanel").style.display = "block";
+}
 
-    if (window.innerWidth <= 768) {
-        document.querySelector(".left").style.display = "none";
-        document.getElementById("rightPanel").style.display = "block";
-        document.getElementById("rightPanel").style.width = "100%";
-    } else {
-        document.getElementById("rightPanel").style.display = "block";
-    }
+function goBack() {
+    document.querySelector(".container").style.display = "flex";
+    document.getElementById("rightPanel").style.display = "none";
 
 }
 
