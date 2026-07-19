@@ -28,10 +28,14 @@ function previous() {
 }
 
 function showBuy() {
-    document.querySelector(".container").style.display = "none";
+    document.querySelector(".left").style.display = "none";
     document.getElementById("rightPanel").style.display = "block";
 }
 
+function goBack() {
+    document.querySelector(".left").style.display = "block";
+    document.getElementById("rightPanel").style.display = "none";
+}
 function goBack() {
     document.querySelector(".container").style.display = "flex";
     document.getElementById("rightPanel").style.display = "none";
@@ -41,7 +45,10 @@ function goBack() {
 function goBack() {
 
     document.querySelector(".left").style.display = "block";
+
     document.getElementById("rightPanel").style.display = "none";
+
+    document.querySelector(".container").style.display = "flex";
 
 }
 function stock() {
