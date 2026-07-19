@@ -3,7 +3,67 @@ margin:0;
 font-family:Arial,Helvetica,sans-serif;
 background:#eaf4ff;
 }
+/* Mobile Responsive */
 
+@media (max-width:768px){
+
+.container{
+    flex-direction:column;
+    padding:10px;
+}
+
+.left,
+.right{
+    width:100%;
+    box-sizing:border-box;
+}
+
+.product{
+    width:100%;
+    max-width:300px;
+    height:auto;
+}
+
+.buy,
+.place{
+    width:100%;
+}
+
+.topbox{
+    flex-direction:column;
+    text-align:center;
+}
+
+.shop{
+    font-size:24px;
+}
+
+.desc{
+    font-size:16px;
+}
+
+.price{
+    font-size:28px;
+}
+
+table{
+    font-size:14px;
+}
+
+.arrow{
+    padding:8px 14px;
+    font-size:18px;
+}
+.back{
+    background:#ddd;
+    border:none;
+    padding:10px 18px;
+    border-radius:20px;
+    cursor:pointer;
+    margin-bottom:20px;
+    font-size:16px;
+}
+}
 /* Seller */
 
 .topbox{
@@ -213,4 +273,10 @@ font-size:16px;
 border:1px solid #ccc;
 border-radius:5px;
 margin-top:5px;
+}@media (max-width:768px){
+
+.right{
+    position:static;
+}
+
 }
