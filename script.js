@@ -26,30 +26,12 @@ function previous() {
     }
     showImage();
 }
-
-function showBuy() {
-    document.querySelector(".left").style.display = "none";
+function showBuy(){
     document.getElementById("rightPanel").style.display = "block";
 }
 
-function goBack() {
-    document.querySelector(".left").style.display = "block";
+function goBack(){
     document.getElementById("rightPanel").style.display = "none";
-}
-function goBack() {
-    document.querySelector(".container").style.display = "flex";
-    document.getElementById("rightPanel").style.display = "none";
-
-}
-
-function goBack() {
-
-    document.querySelector(".left").style.display = "block";
-
-    document.getElementById("rightPanel").style.display = "none";
-
-    document.querySelector(".container").style.display = "flex";
-
 }
 function stock() {
     alert("❌ Sorry!\n\nThis product is currently OUT OF STOCK.\nPlease try again later.");
