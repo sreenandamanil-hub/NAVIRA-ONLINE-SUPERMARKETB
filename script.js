@@ -27,11 +27,18 @@ function previous() {
     showImage();
 }
 function showBuy(){
+
+    document.querySelector(".left").style.width = "50%";
+
     document.getElementById("rightPanel").style.display = "block";
+
 }
 
 function goBack(){
-    document.getElementById("rightPanel").style.display = "none";
+
+    document.querySelector(".left").style.display="block";
+
+    document.getElementById("rightPanel").style.display="none";
 }
 function stock() {
     alert("❌ Sorry!\n\nThis product is currently OUT OF STOCK.\nPlease try again later.");
