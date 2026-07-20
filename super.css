@@ -130,12 +130,12 @@ align-items:flex-start;
 }
 
 .product{
-width:320px;
-height:420px;
-object-fit:cover;
-border-radius:10px;
-display:block;
-margin:auto;
+    width:100%;
+    max-width:420px;
+    height:420px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
 }
 
 .slider{
@@ -295,4 +295,98 @@ font-size:16px;
 border:1px solid #ccc;
 border-radius:5px;
 margin-top:5px;
+}
+#search{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:12px;
+font-size:18px;
+box-sizing:border-box;
+z-index:1000;
+}
+
+body{
+padding-top:60px;
+}
+
+
+
+.card{
+    border:1px solid #ddd;
+    padding:8px;
+    border-radius:8px;
+}
+
+
+/* Laptop */
+#products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:8px;
+    background:#fff;
+    cursor:pointer;
+}
+
+.searchPhoto{
+    width:100%;
+    height:180px;
+    object-fit:contain;
+}
+
+.card h3{
+    font-size:15px;
+    margin:8px 0 4px;
+}
+
+.rating{
+    color:#ff9900;
+    font-size:13px;
+}
+
+.searchprice{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.searcholdPrice{
+    color:gray;
+    text-decoration:line-through;
+    font-size:13px;
+}
+
+.searchdiscount{
+    color:green;
+    font-size:13px;
+    font-weight:bold;
+}
+
+
+/* Phone */
+@media (max-width:768px){
+
+    #products{
+        grid-template-columns:repeat(2,1fr); /* 2 products per row */
+        gap:10px;
+    }
+
+    .searchPhoto{
+        height:140px;
+object-fit:cover;		/* Smaller image */
+    }
+
+    .card h3{
+        font-size:13px;
+    }
+
+    .card p{
+        font-size:11px;
+    }
 }
