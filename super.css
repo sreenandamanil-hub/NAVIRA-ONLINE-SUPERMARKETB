@@ -11,16 +11,16 @@ background:#eaf4ff;
         padding:10px;
     }
 
-    .left,
-    .right{
+    .left{
         width:100% !important;
-        max-width:100%;
+        max-width:100% !important;
+        flex:1 !important;
+        margin:0 !important;
         box-sizing:border-box;
     }
 
     .right{
-        position:static;
-        margin-top:20px;
+        display:none;
     }
 
     .product{
